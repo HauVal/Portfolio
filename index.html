@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/images/favicon.png"
+      type="image/png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="descritpion" content="Portfolio de Hauspie Valentin" />
+    <title>Portfolio Hauspie Valentin</title>
+  </head>
+  <body>
+    <header>
+      <a href="#"> <!--lien pour retour en haut de page-->
+        <img src="./src/assets/images/favicon.png" alt="" /> <!--Logo temporaire car à trouver et insérer-->
+      </a>
+      
+      <h1>Portfolio HAUSPIE Valentin</h1>
+
+      <nav>
+        <a href="#présentation">Présentation</a>
+        <a href="#créations">Mes créations</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="présentation">
+        <h2>HAUSPIE Valentin</h2>
+
+        <p>
+          Je m'appelle Hauspie Valentin et j'ai 29 ans. Je suis originaire du Nord et je suis actuellement 
+          en formation de Développeur Web. Avant de commencer cette formation, je travaillais dans 
+          l'animation auprès des jeunes de 3 à 12 ans en tant qu'animateur des temps périscolaires 
+          (cantine, garderie, etc.) et directeur de centre de loisirs. Je suis également musicien, 
+          ayant suivi une formation professionnelle aux métiers de la musique. Je donnais également 
+          des cours de batterie dans une école de musique. Je suis également le batteur du groupe 
+          BlackDog qui joue des reprises de musiques rock/blues des années 70 à 90.
+          J'ai décidé de me lancer dans une carrière de développeur web car cela m'intéresse depuis 
+          le lycée et que j'avais toujours hésité entre la musique et le développement web, 
+          ce qui va me permettre de pouvoir combiner les deux.
+        </p>
+      </section>
+
+      <section id="créations">
+        <h2>Mes créations</h2>
+
+        <article>
+          <h3>Mon CV</h3>
+
+        <img 
+          src="./src/assets/images/CV.png" 
+          alt="CV rouge et blanc"
+        />
+        <br/>
+
+        <!--Code pour le modal dynamique-->
+
+        <!--<div class="overlay modal-trigger"></div>
+
+        <div class="modal">
+          <button class="close-modal modal-trigger">X</button>
+          <h4>CV Hauspie Valentin</h4>
+          <p>
+            Date de création : 
+            <time datetime="2024-03-07">7 mars 2024</time>
+          </p>
+          <p>Technologie utilisée : HTML5 et CSS3</p>
+          <p>
+            <a href="https://github.com/HauVal/mon-cv" target="_blank">
+              Lien repository
+            </a>
+          </p>
+        </div>-->
+        
+        <button class="modal-btn modal-trigger">Informations</button>
+        </article>
+
+        <article>
+          <h3>Mon premier cahier des charges</h3>
+
+        <img 
+          src="./src/assets/images/Cahier-des-charges.png" 
+          alt="Page de couverture vert et blanc d'un cahier des charges de site web pour l'entreprise la Socketerie"
+        />
+        <br/>
+
+        <!--Code pour le modal dynamique-->
+
+        <!--<div class="overlay modal-trigger"></div>
+
+        <div class="modal">
+          <button class="close-modal modal-trigger">X</button>
+          <h4>Cahier des charges : La Socketterie</h4>
+          <p>
+            Date de création : 
+            <time datetime="2024-03-20">20 mars 2024</time>
+          </p>
+          <p>Technologie utilisée : Microsoft Word et Canvas</p>
+          <p>
+            <a href="./src/assets/projets/Cahier des charges La socketterie.pdf" target="_blank">
+              Voir le cahier des charges
+            </a>
+          </p>
+        </div>-->
+
+        <button class="modal-btn modal-trigger">Informations</button>
+        </article>
+
+        <article>
+          <h3>Espace commentaire dynamisé</h3>
+
+        <img 
+          src="./src/assets/images/espace-commentaires.png" 
+          alt="image d'un espace commentaire avec plusieurs commentaire afficher et un formulaire d'envoi"
+        />
+        <br/>
+
+        <!--Code pour le modal dynamique-->
+
+        <!--<div class="overlay modal-trigger"></div>
+
+        <div class="modal">
+          <button class="close-modal modal-trigger">X</button>
+          <h4>Dynamiser un espace commentaire avec JavaScript</h4>
+          <p>
+            Date de création : 
+            <time datetime="2024-04-15">15 avril 2024</time>
+          </p>
+          <p>Technologie utilisée : HTML5 et JavaScript</p>
+          <p>
+            <a href="https://github.com/HauVal/DynamiserUnEspaceCommentaire" target="_blank">
+              Lien repository
+            </a>
+          </p>
+        </div>-->
+
+        <button class="modal-btn modal-trigger">Informations</button>
+        </article>
+        
+      </section>
+
+      <section id="contact">
+        <h2>Me contacter</h2>
+
+        <p>
+          Envie de me contacter ? N'hésitez pas à utiliser ce formulaire pour prendre contact avec moi !
+        </p>
+
+        <form action="#" method="post">
+          <div>
+            <label for="last-name">Votre Nom</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
+
+            <label for="first-name">Votre Prénom</label>
+            <input type="text" id="first-name" name="first-name" placeholder="John" required>
+          </div>
+
+          <div>
+            <label for="email">Votre Email</label>
+            <input type="email" id="email" name="email" placeholder="adresse@email.com" required>
+          </div>
+          
+          <div>
+            <label for="message">Votre message</label>
+            <textarea name="message" id="message" placeholder="Bonjour, je vous contacte ..." required></textarea>
+          </div>
+          
+          <div>
+            <button type="submit">Envoyer</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <!--Pour les réseau sociaux, j'ai mis exprès les liens des pages d'acceuil (sauf pour GitHub)-->
+        <a href="https://fr.linkedin.com/" target="_blank">
+          <img 
+            src="./src/assets/images/linkedin.png" 
+            alt="Logo de Linkedin"
+          />
+        </a>
+
+        <a href="https://twitter.com/?lang=fr" target="_blank">
+          <img
+            src="./src/assets/images/twitter.png"
+            alt="Logo de twitter"
+          />
+        </a>
+
+        <a href="https://github.com/HauVal" target="_blank">
+          <img 
+            src="./src/assets/images/github.png" 
+            alt="Logo GiitHub"
+          />
+        </a>
+
+        <a href="https://www.facebook.com" target="_blank">
+          <img 
+            src="./src/assets/images/facebook.png" 
+            alt="Logo Facebook"
+          />
+        </a>
+
+        <a href="https://www.instagram.com/" target="_blank">
+          <img 
+            src="./src/assets/images/instagram.png" 
+            alt="Logo instagram"
+          />
+        </a>
+      </section>
+
+      <section>
+        <p>
+          <small>
+            Dernière mise à jour le
+            <time datetime="2024-04-17">17 avril 2024</time><!--Date à changer à la fin du projet-->
+          </small>
+        </p>
+      </section>
+    </footer>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
