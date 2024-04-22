@@ -12,7 +12,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #3a3131;
+    background-image: url('../images/backgroud-header.jpg');
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,15 +24,17 @@ header img {
     box-sizing: content-box;
     padding-right: 20px;
     padding-left: 20px;
-    height: 100px;
-    width: 100px;
-    display: flex;
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 header h1 {
     box-sizing: content-box;
     padding-right: 20px;
     padding-left: 20px;
+    text-align: center;
 }
 
 header div {
@@ -53,24 +56,48 @@ nav a{
     color: #f8f8f8;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:focus {
+    color: #9c8a8a;
+    text-decoration: underline;
+}
+
 main {
     margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #presentation p {
     text-align: justify;
 }
 
+#créations {
+    margin-top: 50px;
+}
+
 #créations img {
     height: 300px;
     border-style: solid;
     border-color: #ffffff;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+
+#créations img:hover {
+    box-shadow: 15px 15px 40px rgba(150, 146, 146, 0.932);
 }
 
 #créations div {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #créations article {
@@ -80,8 +107,13 @@ main {
     align-items: center;
 }
 
+button {
+    cursor: pointer;
+}
+
 #contact {
     background: black;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,6 +130,7 @@ main {
 
 #contact p {
     font-weight: 300;
+    text-align: center;
 }
 
 form div {
@@ -123,7 +156,7 @@ form div > input, form div > textarea {
     box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
 }
 
-#email {
+#email, #object {
     width: 580px;
 }
 
@@ -149,13 +182,13 @@ form button {
     font-weight: 700;
     font-size: 28px;
     background: white;
-    border: rgba(48, 48, 48, 0.5) solid 1px;
+    border: black solid 1px;
     border-radius: 5px;
-    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
     color: #303030;
     }
 
 footer {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
