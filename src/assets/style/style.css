@@ -1,4 +1,7 @@
 body {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    color: #f8f8f8;
     display: flex;
     flex-direction: column;
 }
@@ -9,8 +12,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #dbd7d7;
-    z-index: 1000; /* Assure que le header est au-dessus de tout autre contenu */
+    background-color: #3a3131;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,8 +46,11 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
 
-
+nav a{
+    text-decoration: none;
+    color: #f8f8f8;
 }
 
 main {
@@ -58,7 +63,21 @@ main {
 
 #créations img {
     height: 300px;
+    border-style: solid;
+    border-color: #ffffff;
+}
 
+#créations div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#créations article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
@@ -67,8 +86,13 @@ footer {
     align-items: center;
 }
 
-
-
 footer img {
     height: 30px;
+    box-sizing: content-box;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+footer a {
+    text-decoration: none;
 }
