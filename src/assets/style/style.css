@@ -80,6 +80,81 @@ main {
     align-items: center;
 }
 
+#contact {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 0 50px 0 50px;
+}
+
+#contact h2 {
+    font-weight: 500;
+}
+
+#contact p {
+    font-weight: 300;
+}
+
+form div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 83px;
+    margin-top: 25px;
+}
+
+form div label {
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+
+form div > input, form div > textarea {
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
+}
+
+#email {
+    width: 580px;
+}
+
+form div > textarea {
+    width: 617px;
+    height: 201px;
+}
+
+form div > input {
+    height: 50px;
+    padding-left: 10px;
+}
+
+form div > textarea {
+    height: 195px;
+    padding: 15px 0px 0px 10px;
+}
+
+form button {
+    width: 450px;
+    max-width: 500px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 28px;
+    background: white;
+    border: rgba(48, 48, 48, 0.5) solid 1px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    color: #303030;
+    }
+
 footer {
     display: flex;
     flex-direction: column;
