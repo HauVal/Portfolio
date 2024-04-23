@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@font-face {
+    font-family: "braders" ;
+    src: url(../police/braders/Braders.woff);
+    src: url(../police/braders/Braders.otf) format('opentype');
+}
+@font-face {
+    font-family: "Canva";
+    src: url(../police/made_canvas/MADE-Canvas-Regular-PERSONAL-USE.woff);
+    src: url(../police/made_canvas/MADE\ Canvas\ Regular\ PERSONAL\ USE.otf) format('opentype');
+}
+
+
 /* mise en place de l'arrière plan du corp et disposition en colonne */
 body {
     background-image: url('../images/background.jpg');
@@ -9,17 +24,15 @@ body {
 
 /*Mise en place du header */
 header {
-    border-style: solid;
+    border-bottom-style: solid;
     position: fixed; /*Fixe le header pour le scrolling*/
     top: 0; /*fait en sorte que le header prenne bien tout le haut de la page*/
     left: 0;
     width: 100%;
-    background-image: url('../images/backgroud-header.jpg');
-    background-size: cover;
+    background-color: #5d5c78be;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 header img {
@@ -34,6 +47,7 @@ header img {
 }
 
 header h1 {
+    font-family: "braders", serif;
     box-sizing: content-box;
     padding-right: 20px;
     padding-left: 20px;
@@ -48,7 +62,6 @@ header div {
 
 nav {
     box-sizing: content-box;
-    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -57,6 +70,7 @@ nav {
 nav a{
     text-decoration: none;
     color: #f8f8f8;
+    font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
 nav a:hover {
@@ -73,12 +87,29 @@ main {
     margin-top: 130px;
 }
 
+h2 {
+    font-family: "Fjalla One", sans-serif;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 #presentation p {
     text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #créations {
     margin-top: 50px;
+}
+
+h3 {
+    font-family: "Canva", serif;
+    font-weight: 700;
 }
 
 #créations img {
@@ -143,12 +174,13 @@ form div {
     margin-top: 25px;
 }
 
-form div label {
-    margin-bottom: 7px;
+form tr label {
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
+    font-style: normal;
 }
 
-form div > input, form div > textarea {
+form tr input, form tr textarea {
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -157,21 +189,25 @@ form div > input, form div > textarea {
 
 #email, #object {
     width: 580px;
+    height: 30px;
 }
 
-form div > textarea {
-    width: 617px;
-    height: 201px;
+#last-name, #first-name {
+    margin: 10px;
+    width: 241.5px;
+    height: 30px;
 }
 
-form div > input {
-    height: 50px;
-    padding-left: 10px;
+form tr textarea {
+    margin: 10px;
+    width: 580px;
+    height: 100px;
 }
 
-form div > textarea {
-    height: 195px;
-    padding: 15px 0px 0px 10px;
+form tr input {
+    height: 20px;
+    margin: 10px;
+
 }
 
 form button {

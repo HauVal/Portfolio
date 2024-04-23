@@ -16,16 +16,29 @@
     <title>Erreur 404</title>
 </head>
 <body>
-  <header>
-    <img
-    src="./src/assets/images/Developpement.png"
-    alt="Dessin d'un écran d'ordinateur avec un navigateur ouvert. Derrière l'écran il y a des engranges bleu." 
-    >
-    
-      <h1>Portfolio <br> HAUSPIE Valentin</h1>
-  </header>
+  <body>
+    <header>
+      <!--balise div ajouter pour faciliter la mise en page css-->
+      <div>
+        <a href="#"> <!--lien pour retour en haut de page-->
+          <img
+            src="./src/assets/images/Developpement.png"
+            alt="Dessin d'un écran d'ordinateur avec un navigateur ouvert. Derrière l'écran il y a des engranges bleu." 
+          >
+        </a>
+        
+        <h1>Portfolio <br> HAUSPIE Valentin</h1>  
+      </div>
+      
+      <nav>
+        <a href="./index.html#presentation">Présentation</a>
+        <a href="./index.html#créations">Mes créations</a>
+        <a href="./index.html#contact">Contact</a>
+      </nav>
+    </header>
     <main>
-        <h2>404</h2>
+      <section>
+        <h2>Erreur 404</h2>
 
         <img 
           src="./src/assets/images/Ordinateur.avif" 
@@ -38,9 +51,62 @@
           Il semble que la page demandée n'existe pas.
         </p>
 
-        <a href="./index.html">
-          Revenir à la page d'acceuil
-        </a>
+        <div>
+          <a href="./index.html">
+            Revenir à la page d'acceuil
+          </a>
+        </div>
+      </section>
+        
+
+        <footer>
+          <div>
+    
+            <!--Pour les réseau sociaux, j'ai mis exprès les liens des pages d'acceuil (sauf pour GitHub)-->
+            <a href="https://fr.linkedin.com/" target="_blank">
+              <img 
+                src="./src/assets/images/linkedin.png" 
+                alt="Logo de Linkedin"
+              >
+            </a>
+    
+            <a href="https://twitter.com/?lang=fr" target="_blank">
+              <img
+                src="./src/assets/images/twitter.png"
+                alt="Logo de twitter"
+              >
+            </a>
+    
+            <a href="https://github.com/HauVal" target="_blank">
+              <img 
+                src="./src/assets/images/github.png" 
+                alt="Logo GiitHub"
+              >
+            </a>
+    
+            <a href="https://www.facebook.com" target="_blank">
+              <img 
+                src="./src/assets/images/facebook.png" 
+                alt="Logo Facebook"
+              >
+            </a>
+    
+            <a href="https://www.instagram.com/" target="_blank">
+              <img 
+                src="./src/assets/images/instagram.png" 
+                alt="Logo instagram"
+              >
+            </a>
+          </div>
+    
+          <p>
+            <small>
+              Dernière mise à jour le
+              <time datetime="2024-04-17">17 avril 2024</time><!--Date à changer à la fin du projet-->
+            </small>
+          </p>
+    
+        </footer>
     </main>
 </body>
 </html>

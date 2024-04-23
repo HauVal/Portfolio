@@ -158,32 +158,54 @@
         </p>
 
         <form action="#" method="post">
-          <div>
-            <label for="last-name">Votre Nom</label>
-            <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
+          <table>
+            <tr>
+              <td>
+                <label for="last-name">Nom</label>
+              </td>
+              <td>
+                <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
+              </td>
+              <td>
+                <label for="first-name">Prénom</label>
+              </td>
+              <td>
+                <input type="text" id="first-name" name="first-name" placeholder="John" required>
+              </td>
+            </tr>
 
-            <label for="first-name">Votre Prénom</label>
-            <input type="text" id="first-name" name="first-name" placeholder="John" required>
-          </div>
+            <tr>
+              <td>
+                <label for="email">Email</label>
+              </td>
+              <td colspan="3">
+                <input type="email" id="email" name="email" placeholder="adresse@email.com" required>
+              </td>
+            </tr>
 
-          <div>
-            <label for="email">Votre Email</label>
-            <input type="email" id="email" name="email" placeholder="adresse@email.com" required>
-          </div>
-
-          <div>
-            <label for="object">Objet</label>
-            <input type="text" id="object" name="object" placeholder="ex: Renseignements" required>
-          </div>
-          
-          <div>
-            <label for="message">Votre message</label>
-            <textarea name="message" id="message" placeholder="Bonjour, je vous contacte ..." required></textarea>
-          </div>
+            <tr>
+              <td>
+                <label for="object">Objet</label>
+              </td>
+              <td colspan="3">
+                <input type="text" id="object" name="object" placeholder="ex: Renseignements" required>
+              </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <label for="message">message</label>
+              </td>
+              <td colspan="3">
+                <textarea name="message" id="message" placeholder="Bonjour, je vous contacte ..." required></textarea>
+              </td>
+            </tr>
+          </table>
           
           <div>
             <button type="submit">Envoyer</button>
           </div>
+        
         </form>
       </section>
     </main>
