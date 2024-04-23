@@ -1,3 +1,4 @@
+/* mise en place de l'arrière plan du corp et disposition en colonne */
 body {
     background-image: url('../images/background.jpg');
     background-size: cover;
@@ -6,10 +7,11 @@ body {
     flex-direction: column;
 }
 
+/*Mise en place du header */
 header {
     border-style: solid;
-    position: fixed;
-    top: 0;
+    position: fixed; /*Fixe le header pour le scrolling*/
+    top: 0; /*fait en sorte que le header prenne bien tout le haut de la page*/
     left: 0;
     width: 100%;
     background-image: url('../images/backgroud-header.jpg');
@@ -28,6 +30,7 @@ header img {
     width: 80px;
     object-fit: cover;
     border-radius: 50%;
+    margin-top: 16px;
 }
 
 header h1 {
@@ -65,12 +68,9 @@ nav a:focus {
     text-decoration: underline;
 }
 
+/*Mise ne place du main*/
 main {
     margin-top: 130px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 #presentation p {
@@ -153,7 +153,6 @@ form div > input, form div > textarea {
     border-radius: 5px;
     font-size: 16px;
     font-weight: 500;
-    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
 }
 
 #email, #object {
