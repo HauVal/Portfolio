@@ -29,7 +29,8 @@ header {
     top: 0; /*fait en sorte que le header prenne bien tout le haut de la page*/
     left: 0;
     width: 100%;
-    background-color: #5d5c78be;
+    background-image: url(../images/backgroud-header.jpg);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,9 +84,6 @@ nav a:focus {
 }
 
 /*Mise ne place du main*/
-main {
-    margin-top: 130px;
-}
 
 h2 {
     font-family: "Fjalla One", sans-serif;
@@ -97,6 +95,16 @@ p {
     font-style: normal;
 }
 
+#presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#presentation h2 {
+    padding-top: 150px;
+}
+
 #presentation p {
     text-align: justify;
     margin-left: 20px;
@@ -104,7 +112,12 @@ p {
 }
 
 #créations {
-    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#créations h2 {
+    padding-top: 150px;
 }
 
 h3 {
@@ -115,9 +128,9 @@ h3 {
 #créations img {
     height: 300px;
     border-style: solid;
-    border-color: #ffffff;
-    margin-left: 100px;
-    margin-right: 100px;
+    border-color: #75949e;
+    margin-left: 50px;
+    margin-right: 50px;
     margin-bottom: 20px;
 }
 
@@ -128,6 +141,7 @@ h3 {
 #créations div {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -140,38 +154,39 @@ h3 {
 
 button {
     cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact form{
     background: black;
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 700px;
+    width: auto;
+    max-width: 700px;
     border: 1px solid;
     border-radius: 8px;
     padding: 0 50px 0 50px;
 }
 
 #contact h2 {
-    font-weight: 500;
+    padding-top: 150px;
 }
 
-#contact p {
+form p {
     font-weight: 300;
     text-align: center;
-}
-
-form div {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 83px;
-    margin-top: 25px;
+    padding: 20px;
 }
 
 form tr label {
@@ -211,6 +226,7 @@ form tr input {
 }
 
 form button {
+    margin-bottom: 50px;
     width: 450px;
     max-width: 500px;
     height: 60px;
@@ -220,6 +236,7 @@ form button {
     border: black solid 1px;
     border-radius: 5px;
     color: #303030;
+    margin-top: 25px;
     }
 
 footer {
