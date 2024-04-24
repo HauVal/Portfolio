@@ -172,8 +172,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: auto;
-    max-width: 700px;
+    width: 700px;
     border: 1px solid;
     border-radius: 8px;
     padding: 0 50px 0 50px;
