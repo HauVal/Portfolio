@@ -1,3 +1,4 @@
+/*import police*/
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
@@ -83,8 +84,7 @@ nav a:focus {
     text-decoration: underline;
 }
 
-/*Mise ne place du main*/
-
+/*police des h2 et p*/
 h2 {
     font-family: "Fjalla One", sans-serif;
 }
@@ -95,6 +95,7 @@ p {
     font-style: normal;
 }
 
+/*style présentation*/
 #presentation {
     display: flex;
     flex-direction: column;
@@ -111,6 +112,7 @@ p {
     margin-right: 20px;
 }
 
+/*style mes créations*/
 #créations {
     display: flex;
     flex-direction: column;
@@ -152,6 +154,7 @@ h3 {
     align-items: center;
 }
 
+/*ajout pointer sur les boutons*/
 button {
     cursor: pointer;
     font-family: "Poppins", sans-serif;
@@ -159,6 +162,7 @@ button {
     font-style: normal;
 }
 
+/*style  contact*/
 #contact {
     display: flex;
     flex-wrap: wrap;
@@ -220,6 +224,7 @@ form p {
     font-weight: 700;
 }
 
+/*style champ formulaire*/
 form tr label {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -270,6 +275,39 @@ form button {
     margin-top: 25px;
     }
 
+/*Style message information*/
+#information-message {
+    display: none;
+}
+
+#information-message div {
+    display: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#information-message div p {
+    background-color: #3df02d;
+    color: #303030;
+    border-radius: 50%;
+    height: 2px;
+    width: 2px;
+    margin-right: 10px;
+    font-size: 0.8em;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#information-message h5 {
+    color: #7df85b;
+    font-weight: 700;
+}
+
+/*Style footer*/
 footer {
     margin-top: 50px;
     display: flex;
