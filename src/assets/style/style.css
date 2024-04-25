@@ -185,7 +185,39 @@ button {
 form p {
     font-weight: 300;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+}
+
+/*style alert message*/
+
+#error-message{
+    display: none;
+}
+
+#error-message div{
+    display: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#error-message div p {
+    background-color: #f02d2d;
+    border-radius: 50%;
+    height: 2px;
+    width: 2px;
+    margin-right: 10px;
+    font-size: 0.8em;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#error-message h5 {
+    color: #f85b5b;
+    font-weight: 700;
 }
 
 form tr label {
