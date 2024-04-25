@@ -97,7 +97,7 @@
       <section id="contact">
         <h2>Me contacter</h2>
 
-        <form action="#" method="post">
+        <form action="#" method="post" id="myForm" onsubmit="displayErrorMessage();">
           <p>
             Envie de me contacter ? N'hésitez pas à utiliser ce formulaire pour prendre contact avec moi !
           </p>
@@ -116,13 +116,13 @@
                 <label for="last-name">Nom</label>
               </td>
               <td>
-                <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
+                <input type="text" id="last-name" name="last-name" placeholder="Doe">
               </td>
               <td>
                 <label for="first-name">Prénom</label>
               </td>
               <td>
-                <input type="text" id="first-name" name="first-name" placeholder="John" required>
+                <input type="text" id="first-name" name="first-name" placeholder="John">
               </td>
             </tr>
 
@@ -131,7 +131,7 @@
                 <label for="email">Email</label>
               </td>
               <td colspan="3">
-                <input type="email" id="email" name="email" placeholder="adresse@email.com" required>
+                <input type="email" id="email" name="email" placeholder="adresse@email.com">
               </td>
             </tr>
 
@@ -140,7 +140,7 @@
                 <label for="object">Objet</label>
               </td>
               <td colspan="3">
-                <input type="text" id="object" name="object" placeholder="ex: Renseignements" required>
+                <input type="text" id="object" name="object" placeholder="ex: Renseignements">
               </td>
             </tr>
             
@@ -149,7 +149,7 @@
                 <label for="message">message</label>
               </td>
               <td colspan="3">
-                <textarea name="message" id="message" placeholder="Bonjour, je vous contacte ..." required></textarea>
+                <textarea name="message" id="message" placeholder="Bonjour, je vous contacte ..."></textarea>
               </td>
             </tr>
           </table>
@@ -283,6 +283,7 @@
 
 
     <div id="app"></div>
+    <script src="./src/assets/JavaScript/app.js"></script>
     <script type="module" src="/src/main.js"></script>
   </body>
 
