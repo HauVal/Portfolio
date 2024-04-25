@@ -1,10 +1,10 @@
-    // Récupération des éléments du formulaire
-    let contact = document.getElementById("myForm")
-    let inputFirstName = document.getElementById("first-name");
-    let inputLastName = document.getElementById("last-name");
-    let inputEmail = document.getElementById("email");
-    let inputObject = document.getElementById("object");
-    let inputMessage = document.getElementById("message");
+// Récupération des éléments du formulaire
+let contact = document.getElementById("myForm")
+let inputFirstName = document.getElementById("first-name");
+let inputLastName = document.getElementById("last-name");
+let inputEmail = document.getElementById("email");
+let inputObject = document.getElementById("object");
+let inputMessage = document.getElementById("message");
 
 //fonction pour faire apparaitre le message d'erreur ou le message d'information
 function displayMessages() {
@@ -35,3 +35,12 @@ form.addEventListener('submit', function(event) {
   event.preventDefault();
 });
 
+//modal
+const modalContainer = document.querySelector(".modal-container");
+const modalTriggers = document.querySelectorAll(".modal-trigger");
+
+modalTriggers.forEach(trigger => trigger.addEventListener("click", toggleModal))
+
+function toggleModal() {
+    modalContainer.classList.toggle("active")
+}
