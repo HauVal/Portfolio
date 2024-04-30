@@ -71,7 +71,8 @@
             src="./assets/images/espace-commentaires.png" 
             alt="image d'un espace commentaire avec plusieurs commentaire afficher et un formulaire d'envoi"
           >
-          <button class="modal-btn modal-trigger">Informations</button>
+          <!--Bouton information du modal espace de commentaire-->
+          <contenuCom></contenuCom>
           </article>
         </div>
       </section>
@@ -200,44 +201,6 @@
 
     </footer>
           
-    <!--modal dynamique Cahier-->
-    <!--<div class="modal-container">
-      <div class="overlay modal-trigger"></div>
-  
-      <div class="modal">
-        <button class="close-modal modal-trigger">X</button>
-        <h4>Cahier des charges : La Socketterie</h4>
-        <p>
-          Date de création : 
-          <time datetime="2024-03-20">20 mars 2024</time>
-        </p>
-        <p>Technologie utilisée : Microsoft Word et Canvas</p>
-        <p>
-          <a href="./assets/projets/Cahier des charges La socketterie.pdf" target="_blank">
-            Voir le cahier des charges
-          </a>
-        </p>
-      </div>
-    </div>-->
-          
-    <!--modal dynamique espace commentaire-->
-    <!--<div class="modal-container"></div>
-      <div class="overlay modal-trigger"></div>
-  
-      <div class="modal">
-        <button class="close-modal modal-trigger">X</button>
-        <h4>Dynamiser un espace commentaire avec JavaScript</h4>
-        <p>
-          Date de création : 
-          <time datetime="2024-04-15">15 avril 2024</time>
-        </p>
-        <p>Technologie utilisée : HTML5 et JavaScript</p>
-        <p>
-          <a href="https://github.com/HauVal/DynamiserUnEspaceCommentaire" target="_blank">
-            Lien repository
-          </a>
-        </p>
-      </div>-->
 </template>
 
 <script>
@@ -249,7 +212,8 @@ export default {
   name: 'App',
   components: {
     'contenuCv': ContenuCv,
-    'contenuCahier': ContenuCahier
+    'contenuCahier': ContenuCahier,
+    'contenuCom': ContenuCom
   }
 }
 
