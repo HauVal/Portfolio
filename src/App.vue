@@ -47,7 +47,10 @@
             src="./assets/images/CV.png" 
             alt="CV rouge et blanc"
           >
-          <button class="modal-btn modal-trigger">Informations</button>
+
+          <!--Bouton information du modal CV-->
+          <contenuCv></contenuCv>
+
           </article>
   
           <article>
@@ -57,7 +60,8 @@
             src="./assets/images/Cahier-des-charges.png" 
             alt="Page de couverture vert et blanc d'un cahier des charges de site web pour l'entreprise la Socketerie"
           >
-          <button class="modal-btn modal-trigger">Informations</button>
+          <!--Bouton information du modal Cahier-->
+          <contenuCahier></contenuCahier>
           </article>
   
           <article>
@@ -195,31 +199,6 @@
       </p>
 
     </footer>
-
-    <!--modal dynamique CV-->
-    <div class="modal-container">
-
-      <div class="overlay modal-trigger"></div>
-
-      <div class="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="dialogDesc">
-        <button aria-label="close modal" class="close-modal modal-trigger">X</button>
-        <h4 id="modalTitle">CV Hauspie Valentin</h4>
-        <p>
-          <strong>Date de création :</strong> 
-          <time datetime="2024-03-07">7 mars 2024</time>
-        </p>
-        <p>
-          <strong>Technologie utilisée :</strong>
-            HTML5 et CSS3
-        </p>
-        <p>
-          <a href="https://github.com/HauVal/mon-cv" target="_blank">
-            Lien repository
-          </a>
-        </p>
-      </div>
-
-    </div>
           
     <!--modal dynamique Cahier-->
     <!--<div class="modal-container">
@@ -261,7 +240,19 @@
       </div>-->
 </template>
 
-<script setup>
+<script>
+
+import ContenuCv from './components/ContenuCv.vue'
+import ContenuCahier from './components/ContenuCahier.vue'
+
+export default {
+  name: 'App',
+  components: {
+    'contenuCv': ContenuCv,
+    'contenuCahier': ContenuCahier
+  }
+}
+
 </script>
 
 <style scoped>
