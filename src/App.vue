@@ -207,13 +207,14 @@
 
 import ContenuCv from './components/ContenuCv.vue'
 import ContenuCahier from './components/ContenuCahier.vue'
+import ContenuCom from './components/ContenuComment.vue'
 
 export default {
   name: 'App',
   components: {
     'contenuCv': ContenuCv,
     'contenuCahier': ContenuCahier,
-    'contenuCom': ContenuCom
+    'contenuCom': ContenuCom,
   }
 }
 
