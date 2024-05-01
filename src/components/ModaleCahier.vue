@@ -13,7 +13,7 @@
         </p>
         <p>Technologie utilisée : Microsoft Word et Canvas</p>
         <p>
-          <a href="../assets/projets/Cahier-des-charges-La-socketterie.pdf" target="_blank">
+          <a href="https://www.dropbox.com/scl/fi/xlqc2pw4kft99k0kqqzug/Cahier-des-charges-La-socketterie.pdf?rlkey=ja7pyyovaso3lez1fqprzn57j&st=5enbj0lq&dl=0" target="_blank">
             Voir le cahier des charges
           </a>
         </p>

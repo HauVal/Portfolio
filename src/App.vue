@@ -63,8 +63,6 @@
 
 <script setup>
 
-import Home from "@/views/HomeView.vue"
-import NotFound from "@/views/NotFound.vue";
 
 </script>
 
@@ -141,7 +139,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-nav a:focus {
+nav a:active {
   color: #9c8a8a;
   text-decoration: underline;
 }
