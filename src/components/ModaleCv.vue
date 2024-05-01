@@ -12,7 +12,7 @@
         <h4>CV Hauspie Valentin</h4>
         <p>
             <strong>Date de création :</strong> 
-            <time datetime="2024-03-07">7 mars 2024</time>
+            <time datetime="2024-03-07"> 7 mars 2024</time>
         </p>
         <p>
             <strong>Technologie utilisée :</strong>

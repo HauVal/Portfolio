@@ -78,77 +78,7 @@
       </section>
 
       <section id="contact">
-        <h2>Me contacter</h2>
-
-        <form action="#" method="post" id="Form" onsubmit="displayMessages();">
-          <p>
-            Envie de me contacter ? N'hésitez pas à utiliser ce formulaire pour prendre contact avec moi !
-          </p>
-
-          <!--Alert message-->
-          <div id="error-message">
-            <div>
-              <p>x</p>
-              <h5>Tous les champs doivent être remplis.</h5>
-            </div>
-          </div>
-
-          <table>
-            <tr>
-              <td>
-                <label for="last-name">Nom</label>
-              </td>
-              <td>
-                <input type="text" id="last-name" name="last-name" placeholder="Doe">
-              </td>
-              <td>
-                <label for="first-name">Prénom</label>
-              </td>
-              <td>
-                <input type="text" id="first-name" name="first-name" placeholder="John">
-              </td>
-            </tr>
-
-            <tr>
-              <td>
-                <label for="email">Email</label>
-              </td>
-              <td colspan="3">
-                <input type="email" id="email" name="email" placeholder="adresse@email.com">
-              </td>
-            </tr>
-
-            <tr>
-              <td>
-                <label for="object">Objet</label>
-              </td>
-              <td colspan="3">
-                <input type="text" id="object" name="object" placeholder="ex: Renseignements">
-              </td>
-            </tr>
-            
-            <tr>
-              <td>
-                <label for="message">Message</label>
-              </td>
-              <td colspan="3">
-                <textarea name="message" id="message" placeholder="Bonjour, je vous contacte ..."></textarea>
-              </td>
-            </tr>
-          </table>
-          
-          <!--information message-->
-          <div id="information-message">
-            <div>
-              <p>!</p>
-              <h5>Le mail a bien été envoyé.</h5>
-            </div>
-          </div>
-
-          <input type="hidden" name="recipient" value="valentin.hauspie@gmail.com">
-          <button type="submit">Envoyer</button>
-        
-        </form>
+        <formulaire></formulaire>
       </section>
     </main>
 
@@ -205,6 +135,7 @@
 
 <script>
 
+import Formulaire from './components/Formulaire/Formulaire.vue'
 import ContenuCv from './components/ContenuCv.vue'
 import ContenuCahier from './components/ContenuCahier.vue'
 import ContenuCom from './components/ContenuComment.vue'
@@ -212,6 +143,7 @@ import ContenuCom from './components/ContenuComment.vue'
 export default {
   name: 'App',
   components: {
+    'formulaire': Formulaire,
     'contenuCv': ContenuCv,
     'contenuCahier': ContenuCahier,
     'contenuCom': ContenuCom,
