@@ -54,17 +54,13 @@
     <p>
       <small>
         Dernière mise à jour le
-        <time datetime="2024-05-01">1 mai 2024</time
-        ><!--Date à changer à la fin du projet-->
+        <time datetime="2024-05-06">6 mai 2024</time>
       </small>
     </p>
   </footer>
 </template>
 
-<script setup>
-
-
-</script>
+<script setup></script>
 
 <style scoped>
 /*import police*/
@@ -81,6 +77,18 @@
   src: url(./assets/police/made_canvas/MADE-Canvas-Regular-PERSONAL-USE.woff);
   src: url(./assets/police/made_canvas/MADE\ Canvas\ Regular\ PERSONAL\ USE.otf)
     format("opentype");
+}
+
+@font-face {
+  font-family: "SuperMario";
+  src: url(./assets/police/super_mario_bros_3/Super-Mario-Bros-3.woff);
+  src: url(./assets/police/super_mario_bros_3/Super-Mario-Bros--3.ttf)
+    format("opentype");
+}
+@font-face {
+  font-family: "PKMN";
+  src: url(./assets/police/pkmn_rbygsc/PKMN-RBYGSC.woff);
+  src: url(./assets/police/pkmn_rbygsc/PKMN-RBYGSC.ttf) format("opentype");
 }
 
 /*Mise en place du header */

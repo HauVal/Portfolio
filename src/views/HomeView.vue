@@ -35,14 +35,12 @@ import Formulaire from "@/components/componentsHome/Formulaire.vue";
     format("opentype");
 }
 
-/*style présentation*/
 #presentation {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/*style mes créations*/
 #créations {
   display: flex;
   flex-direction: column;
@@ -57,7 +55,6 @@ button {
   font-style: normal;
 }
 
-/*style  contact*/
 #contact {
   display: flex;
   flex-wrap: wrap;

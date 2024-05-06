@@ -8,10 +8,10 @@
       </button>
       <h4>Cahier des charges : La Socketterie</h4>
       <p>
-        Date de création :
+        <strong>Date de création : </strong>
         <time datetime="2024-03-20">20 mars 2024</time>
       </p>
-      <p>Technologie utilisée : Microsoft Word et Canvas</p>
+      <p><strong>Technologie utilisée :</strong> Microsoft Word et Canvas</p>
       <p>
         <a
           href="https://www.dropbox.com/scl/fi/xlqc2pw4kft99k0kqqzug/Cahier-des-charges-La-socketterie.pdf?rlkey=ja7pyyovaso3lez1fqprzn57j&st=5enbj0lq&dl=0"
@@ -59,13 +59,23 @@ export default {
   padding: 50px;
   position: fixed;
   top: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .modale p a {
   text-decoration: none;
   color: #f8f8f8;
   font-family: "M PLUS Rounded 1c", sans-serif;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .modale p a:hover {
@@ -81,9 +91,12 @@ export default {
 }
 
 h4 {
+  display: flex;
   margin-bottom: 10px;
   font-family: "Canva", serif;
   font-weight: 700;
+  font-size: 1.6em;
+  text-decoration: underline;
 }
 
 .btn-modale {

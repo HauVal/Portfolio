@@ -1,7 +1,4 @@
 body {
     background-image: url(../assets/images/background.jpg);
-    background-size: cover;
     color: #f8f8f8;
-    display: flex;
-    flex-direction: column;
 }
