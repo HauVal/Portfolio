@@ -59,6 +59,10 @@ export default {
   padding: 50px;
   position: fixed;
   top: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 p {
@@ -71,7 +75,7 @@ p {
   text-decoration: none;
   color: #f8f8f8;
   font-family: "M PLUS Rounded 1c", sans-serif;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .modale p a:hover {
@@ -87,9 +91,12 @@ p {
 }
 
 h4 {
+  display: flex;
   margin-bottom: 10px;
   font-family: "Canva", serif;
   font-weight: 700;
+  font-size: 1.6em;
+  text-decoration: underline;
 }
 
 .btn-modale {
