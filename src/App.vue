@@ -54,8 +54,8 @@
     <p>
       <small>
         Dernière mise à jour le
-        <time datetime="2024-05-01">1 mai 2024</time
-        ><!--Date à changer à la fin du projet-->
+        <time datetime="2024-05-06">6 mai 2024</time
+        >
       </small>
     </p>
   </footer>
