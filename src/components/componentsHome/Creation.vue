@@ -45,6 +45,7 @@ import ContenuCom from "@/components/ContenuComment.vue";
 
 <style scoped>
 h2 {
+  font-family: "Fjalla One", sans-serif;
   padding-top: 150px;
 }
 
