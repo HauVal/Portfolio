@@ -20,23 +20,7 @@
 <script setup></script>
 
 <style scoped>
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-  @font-face {
-    font-family: "braders";
-    src: url(../assets/police/braders/Braders.woff);
-    src: url(../assets/police/braders/Braders.otf) format("opentype");
-  }
-  @font-face {
-    font-family: "SuperMario";
-    src: url(../assets/police/super_mario_bros_3/Super-Mario-Bros-3.woff);
-    src: url(../assets/police/super_mario_bros_3/Super-Mario-Bros--3.ttf)
-      format("opentype");
-  }
-  @font-face {
-    font-family: "PKMN";
-    src: url(../assets/police/pkmn_rbygsc/PKMN-RBYGSC.woff);
-    src: url(../assets/police/pkmn_rbygsc/PKMN\ RBYGSC.ttf) format("opentype");
-  }
+
   section {
     display: flex;
     flex-direction: column;
@@ -56,12 +40,12 @@
     border-radius: 50%;
   }
 
-  section p {
+  p {
     font-family: "PKMN";
     padding: 20px;
   }
 
-  main section div a {
+  a {
     padding: 10px;
     text-decoration: none;
     color: white;

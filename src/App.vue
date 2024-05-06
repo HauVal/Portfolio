@@ -82,6 +82,17 @@
   src: url(./assets/police/made_canvas/MADE\ Canvas\ Regular\ PERSONAL\ USE.otf)
     format("opentype");
 }
+  @font-face {
+    font-family: "SuperMario";
+    src: url(./assets/police/super_mario_bros_3/Super-Mario-Bros-3.woff);
+    src: url(./assets/police/super_mario_bros_3/Super-Mario-Bros--3.ttf)
+      format("opentype");
+  }
+  @font-face {
+    font-family: "PKMN";
+    src: url(./assets/police/pkmn_rbygsc/PKMN-RBYGSC.woff);
+    src: url(./assets/police/pkmn_rbygsc/PKMN-RBYGSC.ttf) format("opentype");
+  }
 
 /*Mise en place du header */
 header {
@@ -147,12 +158,6 @@ nav a:active {
 /*police des h2 et p*/
 h2 {
   font-family: "Fjalla One", sans-serif;
-}
-
-p {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 /*Style footer*/
