@@ -36,11 +36,9 @@
 </template>
 
 <script setup>
-
 import ContenuCv from "@/components/ContenuCv.vue";
 import ContenuCahier from "@/components/ContenuCahier.vue";
 import ContenuCom from "@/components/ContenuComment.vue";
-
 </script>
 
 <style scoped>
